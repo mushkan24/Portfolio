@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>MUSHKAN | PORTFOLIO</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h1 class="logo">KUMARI MUSHKAN</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <video autoplay muted loop class="bg-video">
+            <source src="Assets/Videos/bg1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p class="fade-in delay-1">Hi, my name is</p>
+        <h1 class="name fade-in delay-2">KUMARI MUSHKAN</h1>
+        <h2 class="subtitle fade-in delay-3">I am an AI & ML Engineer</h2>
+        <p class="description fade-in delay-4">
+            I'm a final year student specializing in building ML models and AI to solve real world problems (and occasionally designing) exceptional digital experiences.
+        </p>
+        <a href="Assets/cv.pdf" class="cv-btn fade-in delay-5" target="_blank">
+            <span class="cv-text">Check out my CV</span>
+            <i class="fas fa-file-alt cv-icon"></i>
+        </a>        
+
+        <div class="scroll-down-wrapper">
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down scroll-icon"></i> 
+                <span class="scroll-text">Learn More</span>
+            </a>
+        </div>        
+    </section>    
+
+    <div class="scroll-indicator">
+        <a href="#" class="dot active" data-section="home"></a>
+        <a href="#about" class="dot" data-section="about"></a>
+        <a href="#projects" class="dot" data-section="projects"></a>
+        <a href="#certificates" class="dot" data-section="certificates"></a>
+        <a href="#contact" class="dot" data-section="contact"></a>
+    </div>
+
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <!-- Profile Picture Section -->
+            <div class="about-left">
+                <div class="profile-pic-container">
+                    <div class="neon-border neon-strip1"></div>
+                    <div class="neon-border neon-strip2"></div>
+                    <div class="neon-border neon-strip3"></div>
+                    <div class="neon-border neon-strip4"></div>
+                    <img src="Assets/Videos/Images/pp.png" alt="Profile Picture" class="profile-pic">
+                </div>                                                                                
+            </div>
+    
+            <!-- About Me Content Section -->
+            <div class="about-right">
+                <p class="typing-text"><span id="typed-text"></span><span class="cursor">|</span></p>
+                <hr class="styled-hr">
+                <p class="about-text">
+                    I am a <span class="highlight"> AI & ML Engineer</span> passionate about building intelligent systems that solve real-world problems.
+                </p>
+                <p class="about-text">
+                    With expertise in <span class="highlight">deep learning, data science, and AI-driven applications</span>, I specialize in designing and deploying scalable machine learning models.
+                </p>
+                <p class="about-text">
+                    My journey in AI has been driven by curiosity and innovation—whether it's training state-of-the-art neural networks, optimizing ML pipelines, or fine-tuning models for performance.
+                </p>
+                <p class="about-text">
+                    Beyond coding, I am fascinated by <span class="highlight">MLOps, model interpretability, and AI ethics</span>, ensuring that my work is not only cutting-edge but also responsible and efficient.
+                </p>
+                <p class="about-text">
+                    Always eager to learn and collaborate, I aim to push the boundaries of what's possible with AI.
+                </p>
+            </div>
+        </div>
+
+        <section class="skills-section">
+            <h2 class="skills-title">Skills</h2>
+            <hr class="styled1-hr">
+        
+            <div class="skills-container">
+                <!-- Development Skills -->
+                <div class="skill-box">
+                    <h3><i class="fas fa-code"></i> Development</h3>
+                    <div class="skill-list">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                    </div>
+                </div>
+        
+                <!-- Tools -->
+                <div class="skill-box">
+                    <h3><i class="fas fa-wrench"></i> Tools</h3>
+                    <ul>
+                        <li>✔ Git & GitHub</li>
+                        <li>✔ VS Code</li>
+                        <li>✔ Jupyter Notebook</li>
+                        <li>✔ Linux & Bash</li>
+                        <li>✔ Anaconda</li>
+                    </ul>
+                </div>
+        
+                <!-- AI & ML -->
+                <div class="skill-box">
+                    <h3><i class="fas fa-brain"></i> AI & ML</h3>
+                    <ul>
+                        <li>✔ Machine learning</li>
+                        <li>✔ Deep Learning</li>
+                        <li>✔ Computer Vision</li>
+                        <li>✔ NLP</li>
+                        <li>✔ Model Deployment</li>
+                        <li>✔ Data Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project">
+                    <div class="project-content">
+                        <h3 class="project-head">Agro-culture management system</h3>
+                        <p class="project-para">The purpose of Agro-culture management system is to automate the existing manual system by the help of computerized equipment and full-fledged computer software, fulfilling their requirements, so that their valuable data/information can be stored for a longer period with easy accessing and manipulation of the same. </p>
+                        <ul class="tech-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>Python</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank">GitHub</a>
+                            <a href="https://yourliveproject.com" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="Assets/Videos/Images/project1.jpg" alt="Project 1">
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project">
+                    <div class="project-content">
+                        <h3 class="project-head">Stock market Analysis with gesture control</h3>
+                        <p class="project-para">This project combines stock market analysis with gesture control for intuitive trading. Machine learning analyzes market trends, offering real-time insights. Computer vision enables hands-free data navigation, enhancing efficiency and engagement in financial trading.</p>
+                        <ul class="tech-list">
+                            <li>python</li>
+                            <li>JS</li>
+                            <li>TailwindCSS</li>
+                            <li>PostgreSQL</li>
+                            <li>openCV</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Shadowfax84/Stock-Market-visualization-with-Gesture-Control" target="_blank">GitHub</a>
+                            <a href="https://yourliveproject.com" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="Assets/Videos/Images/project2.jpg" alt="Project 2">
+                    </div>
+                </div>
+         
+                <!-- Project 3 -->
+                <div class="project">
+                    <div class="project-content">
+                        <h3 class="project-head">Portfolio website</h3>
+                        <p class="project-para">Built a responsive portfolio using HTML, CSS, and JavaScript to showcase projects, skills, and achievements. Features an interactive UI, smooth animations, and a structured layout for seamless navigation. Designed for optimal user experience and professional online presence with a focus on web development and UI/UX design.</p>
+                        <ul class="tech-list">
+                            <li>HTML</li>
+                            <li>JS</li>
+                            <li>CSS</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank">GitHub</a>
+                            <a href="https://yourliveproject.com" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="Assets/Videos/Images/project3.png" alt="Project 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+    
+            <div class="certificates-grid">
+    
+                <!-- Certificate 1 -->
+                <div class="certificate">
+                    <img src="Assets/certificates/cert1.png" alt="Certificate 1">
+                    <h3>IITK Certification – Python for AI/ML & DL</h3>
+                    <div class="cert-content">
+                        <ul>
+                            <li><strong>Python for AI/ML-</strong>Data handling, NumPy, Pandas, Matplotlib.</li><br>
+                            <li><strong>Machine Learning-</strong>Supervised & Unsupervised Learning, Model Evaluation, Feature Engineering</li><br>
+                            <li><strong>Deep Learning-</strong>Neural Networks, CNNs, RNNs, Transfer Learning, Optimization Techniques,TensorFlow & Keras</li><br>
+                            <li><strong>Projects-</strong>Real-world AI/ML applications using Python</li><br>
+                        </ul>
+                    </div>
+                    <a href="Assets/certificates/cert1.pdf" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+    
+                <!-- Certificate 2 -->
+                <div class="certificate">
+                    <img src="Assets/certificates/cert2.png" alt="Certificate 2">
+                    <h3>Python for data science</h3>
+                    <div class="cert-content">
+                    <ul>
+                        <li><strong>Data Handling-</strong>Pandas, NumPy (DataFrames, Arrays, Data Cleaning)</li><br>
+                        <li><strong>Visualization-</strong>Matplotlib, Seaborn (Graphs, Heatmaps, Trends)</li><br>
+                        <li><strong>Statistical Analysis-</strong>Descriptive Stats, Probability, Hypothesis Testing</li><br>
+                        <li><strong>Data Processing-</strong>Feature Engineering, Normalization, Encoding</li><br>
+                        <li><strong>Working with APIs & Web Scraping-</strong>Requests, BeautifulSoup</li><br>
+                    </ul>
+                    </div>
+                    <a href="Assets/certificates/cert2.pdf" target="_blank" class="view-btn">View Certificate</a>
+                </div>
+    
+                <!-- Certificate 3 -->
+                <div class="certificate">
+                    <img src="Assets/certificates/cert3.png" alt="Certificate 3">
+                    <h3>Probability for data science</h3>
+                    <div class="cert-content">
+                        <ul>
+                            <li><strong>Probability Distributions-</strong>Understanding Normal and Binomial distributions for modeling uncertainty.</li><br>
+                            <li><strong>Central Limit Theorem-</strong>Foundation for statistical inference and hypothesis testing.</li><br>
+                            <li><strong>Markov Chains & Stochastic Processes-</strong>Probabilistic modeling for time-series & dynamic systems.</li><br>
+                            <li><strong>Random Variables & Expectation-</strong>Modeling and predicting outcomes in real-world scenarios.</li><br>
+                        </ul>
+                    </div>
+                    <a href="Assets/certificates/cert3.pdf" target="_blank" class="view-btn">View Certificate</a>
+            </div>
+        </div>
+    </section>    
+
+    <section class="contact" id="contact">
+        <video autoplay loop muted id="contact-video" class="video-bg2">
+            <source src="Assets/Videos/bg2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="contact-container">
+            <h2>Get In Touch</h2>
+            <p>Have a sweet project in mind or just want to say hi?</p>
+            <p></p>
+            <form id="contact-form" name="submit-to-google-sheet">
+            <input type="text" name="Name" id="name" placeholder="Name" required>
+            <input type="email" name="Email" id="email" placeholder="Email" required>
+            <input type="text" name="Subject" id="subject" placeholder="Subject" required>
+            <textarea id="message" name="Message" placeholder="Message" rows="4" required></textarea>
+            <button type="submit" id="contact-btn" class="contact-btn">Send Message</button>
+        </form>
+        <span id="msg"></span>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/mushkan24" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kumari-mushkan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:kmushkan24@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 Kumari Mushkan | All Rights Reserved.</p>
+        </div>
+    </footer>    
+    <script src="index.js"></script>
+</body>
+</html>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzVZHByIee2JafdO4Th5H1Wuiusid0o3FZe1oMtZuWdygw5fCR2AAPIwza_f05gR3uedg/exec'
+    const form = document.forms['submit-to-google-sheet'];
+    const msg =document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully !"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
